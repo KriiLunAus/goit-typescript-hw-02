@@ -2,6 +2,8 @@ import toast, {Toaster} from "react-hot-toast";
 import { FiSearch } from "react-icons/fi";
 import css from "./SearchBar.module.css"
 
+
+
 const SearchBar = ({ onSubmit }) => {
   
 
@@ -16,7 +18,7 @@ const SearchBar = ({ onSubmit }) => {
 
         if (inputValue !== "") {
             onSubmit({
-                query: inputValue,
+                input: inputValue,
             })
             
         } else {
