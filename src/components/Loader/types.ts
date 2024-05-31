@@ -1,0 +1,3 @@
+type LoaderProps = {
+    loading: boolean,
+}

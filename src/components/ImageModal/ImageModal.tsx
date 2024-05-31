@@ -18,7 +18,7 @@ const customStyles = {
   },
 };
 
-const ImageModal = ({ imgId, photos, onClose, modalIsOpen }) => {
+const ImageModal = ({ imgId, photos, onClose, modalIsOpen }:ImageModalProps) => {
   const photo = photos.find((photo) => photo.id === imgId);
 
   return (

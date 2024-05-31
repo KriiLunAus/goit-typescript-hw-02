@@ -4,17 +4,17 @@ import css from "./SearchBar.module.css"
 
 
 
-const SearchBar = ({ onSubmit }) => {
+const SearchBar = ({ onSubmit }: SearchBarProps) => {
   
 
     const notify = () => toast.error("Please type something!!!");
 
-    const handleSubmit = evt => {
+    const handleSubmit = (evt: React.FormEvent<HTMLFormElement>): void => {
 
         evt.preventDefault();
         
-        const form = evt.target;
-        const inputValue = form.elements.search.value.trim();
+        const form = evt.target as HTMLFormElement;
+        const inputValue = (form.elements.namedItem('search') as HTMLInputElement).value.trim();
 
         if (inputValue !== "") {
             onSubmit({

@@ -1,0 +1,3 @@
+type LoadMorebtn = {
+    onClick: ()=> void,
+}

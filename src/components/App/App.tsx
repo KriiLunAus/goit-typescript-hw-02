@@ -8,7 +8,7 @@ import ImageModal from "../ImageModal/ImageModal.jsx";
 import Loader from "../Loader/Loader.jsx";
 
 const App = () => {
-  const [photos, setPhotos] = useState<Photo[]>([]); // array with data
+  const [photos, setPhotos] = useState<Photos[]>([]); // array with data
   const [error, setError] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
   const [query, setQuery] = useState<string>(""); // query for input

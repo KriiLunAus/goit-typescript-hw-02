@@ -40,7 +40,7 @@ interface User {
   [key: string]: any; // для підтримки додаткових полів користувача
 }
 
-interface Photo {
+interface Photos {
   id: string;
   urls: Urls;
   alt_description: string;
