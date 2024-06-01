@@ -8,7 +8,7 @@ type AlternativeSlugs = {
   ja: string;
   fr: string;
   it: string;
-  [key: string]: string; // для підтримки додаткових мов
+  [key: string]: string; 
 }
 
 type Links = {
@@ -28,7 +28,7 @@ type Urls = {
   regular: string;
   small: string;
   thumb: string;
-  [key: string]: string; // для підтримки додаткових форматів URL
+  [key: string]: string; 
 }
 
 type User = {
@@ -37,7 +37,7 @@ type User = {
   username: string;
   name: string;
   first_name?: string;
-  [key: string]: any; // для підтримки додаткових полів користувача
+  [key: string]: any; 
 }
 
 type Photos = {
@@ -49,10 +49,10 @@ type Photos = {
   alternative_slugs?: AlternativeSlugs;
   asset_type?: string;
   blur_hash?: string;
-  breadcrumbs?: object[]; // Типізуйте цей об'єкт, якщо відома структура
+  breadcrumbs?: object[];
   color?: string;
   created_at?: string;
-  current_user_collections?: any[]; // Типізуйте цей масив, якщо відома структура
+  current_user_collections?: any[]; 
   description?: string;
   height?: number;
   liked_by_user?: boolean;
@@ -61,7 +61,7 @@ type Photos = {
   slug?: string;
   sponsorship?: string | null;
   tags?: Tag[];
-  topic_submissions?: object; // Типізуйте цей об'єкт, якщо відома структура
+  topic_submissions?: object; 
   updated_at?: string;
   width?: number;
 }
