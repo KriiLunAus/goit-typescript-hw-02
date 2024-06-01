@@ -26,7 +26,7 @@ const App = () => {
 
           await new Promise((resolve) => setTimeout(resolve, 1000)); // makes timeout for loader
 
-          const data = await fetchPhotosWithQuery(query, currentPage);
+          const data: Data = await fetchPhotosWithQuery(query, currentPage);
           setNewPagesAvaliable(data.total_pages >= currentPage);
           setPhotos((prevPhotos) => [...prevPhotos, ...data.results]);
         } catch (error) {

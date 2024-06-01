@@ -2,7 +2,7 @@ type InputValue = {
     input: string;
 }
 
-interface AlternativeSlugs {
+type AlternativeSlugs = {
   en: string;
   es: string;
   ja: string;
@@ -11,18 +11,18 @@ interface AlternativeSlugs {
   [key: string]: string; // для підтримки додаткових мов
 }
 
-interface Links {
+type Links = {
   self: string;
   html: string;
   download: string;
   download_location: string;
 }
 
-interface Tag {
+type Tag = {
   title: string;
 }
 
-interface Urls {
+type Urls = {
   raw: string;
   full: string;
   regular: string;
@@ -31,7 +31,7 @@ interface Urls {
   [key: string]: string; // для підтримки додаткових форматів URL
 }
 
-interface User {
+type User = {
   id: string;
   updated_at?: string;
   username: string;
@@ -40,7 +40,7 @@ interface User {
   [key: string]: any; // для підтримки додаткових полів користувача
 }
 
-interface Photos {
+type Photos = {
   id: string;
   urls: Urls;
   alt_description: string;
@@ -64,4 +64,10 @@ interface Photos {
   topic_submissions?: object; // Типізуйте цей об'єкт, якщо відома структура
   updated_at?: string;
   width?: number;
+}
+
+type Data ={
+  results: Photos[],
+  total: number,
+  total_pages: number,
 }
